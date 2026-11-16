@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auliadi, S.Pd., CHt., C.NLP. | Layanan Hipnoterapi & NLP Profesional</title>
+    <meta name="description" content="Layanan Hipnoterapi & NLP modern, ilmiah, dan menenangkan bersama Auliadi, S.Pd., CHt., C.NLP. Melayani sesi tatap muka di Tabalong & sesi online seluruh Indonesia.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Lora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Konfigurasi Tema Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tealDeep: '#0F4C5C',
+                        emeraldDark: '#134E4A',
+                        sageLight: '#E6EFE9',
+                        sageMuted: '#6B8E78',
+                        creamWarm: '#FAF9F6',
+                        sandSoft: '#F3EFEA',
+                        goldAccent: '#C59B27',
+                        goldLight: '#F4EBD0',
+                        charcoal: '#1E293B'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Lora"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-creamWarm text-charcoal font-sans antialiased overflow-x-hidden selection:bg-tealDeep selection:text-white">
+
+    <!-- Navigasi Sticky -->
+    <header class="sticky top-0 z-50 bg-creamWarm/95 backdrop-blur-md border-b border-sageMuted/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo / Brand -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-tealDeep to-emeraldDark flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+                        <svg class="w-6 h-6 text-goldLight" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-lg sm:text-xl text-tealDeep block leading-tight">Auliadi MindCare</span>
+                        <span class="text-xs text-sageMuted font-medium tracking-wider uppercase block">Hypnotherapy & NLP</span>
+                    </div>
+                </a>
+
+                <!-- Menu Desktop -->
+                <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-700">
+                    <a href="#tentang" class="hover:text-tealDeep transition-colors">Tentang Terapi</a>
+                    <a href="#layanan" class="hover:text-tealDeep transition-colors">Layanan</a>
+                    <a href="#alur" class="hover:text-tealDeep transition-colors">Alur Sesi</a>
+                    <a href="#profil" class="hover:text-tealDeep transition-colors">Profil Praktisi</a>
+                    <a href="#self-check" class="hover:text-tealDeep transition-colors">Cek Kondisi Pikiran</a>
+                    <a href="#faq" class="hover:text-tealDeep transition-colors">FAQ</a>
+                </nav>
+
+                <!-- CTA Button Desktop -->
+                <div class="hidden lg:flex items-center">
+                    <a href="#reservasi" class="px-5 py-2.5 rounded-xl bg-tealDeep hover:bg-emeraldDark text-white text-sm font-semibold shadow-sm hover:shadow transition-all flex items-center gap-2">
+                        <span>Reservasi Sesi</span>
+                        <svg class="w-4 h-4 text-goldLight" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Tombol Hamburger Mobile -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Buka Menu" class="p-2.5 rounded-xl text-tealDeep hover:bg-sageLight focus:outline-none transition-colors">
+                        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dropdown Menu Mobile -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-creamWarm border-b border-sageMuted/20 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+            <a href="#tentang" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-sageLight hover:text-tealDeep">Tentang Terapi & Mitos</a>
+            <a href="#layanan" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-sageLight hover:text-tealDeep">Layanan Utama</a>
+            <a href="#alur" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-sageLight hover:text-tealDeep">Alur Sesi Terapi</a>
+            <a href="#profil" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-sageLight hover:text-tealDeep">Profil Praktisi</a>
+            <a href="#self-check" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-sageLight hover:text-tealDeep">Kuis Cek Kondisi Pikiran</a>
+            <a href="#faq" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-sageLight hover:text-tealDeep">Pertanyaan Umum (FAQ)</a>
+            <div class="pt-3">
+                <a href="#reservasi" class="mobile-link block w-full text-center px-5 py-3.5 rounded-xl bg-tealDeep text-white font-semibold shadow-md">
+                    Jadwalkan Sesi Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. HERO SECTION -->
+    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+        <!-- Dekorasi Latar Lembut -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-sageLight/70 blur-3xl -z-10"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-goldLight/40 blur-3xl -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Kolom Teks Utama -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sageLight border border-sageMuted/30 text-emeraldDark text-xs sm:text-sm font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-goldAccent animate-pulse"></span>
+                        <span>Pendekatan Ilmiah, Aman & Non-Klinis</span>
+                    </div>
+
+                    <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-tealDeep leading-tight">
+                        Temukan Ketenangan Batin &amp; Berdayakan Potensi <span class="text-goldAccent italic">Pikiran Bawah Sadar</span> Anda
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Lepaskan beban pikiran, atasi <em>overthinking</em>, bangun kepercayaan diri, dan raih perubahan positif yang berkelanjutan melalui metode <strong>Hipnoterapi</strong> &amp; <strong>Neuro-Linguistic Programming (NLP)</strong> yang terukur bersama praktisi tersertifikasi.
+                    </p>
+
+                    <!-- Tombol CTA -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="https://wa.me/6285753987438?text=Halo%20Pak%20Auliadi,%20saya%20tertarik%20untuk%20konsultasi%20gratis%20mengenai%20layanan%20hipnoterapi." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-tealDeep hover:bg-emeraldDark text-white font-semibold shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2.5 text-sm sm:text-base">
+                            <svg class="w-5 h-5 text-goldLight" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+                            </svg>
+                            <span>Konsultasi Gratis via WhatsApp</span>
+                        </a>
+                        <a href="#layanan" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-white hover:bg-sandSoft text-tealDeep border border-tealDeep/20 font-semibold transition-all text-center text-sm sm:text-base">
+                            Lihat Layanan
+                        </a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs sm:text-sm text-slate-600">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-goldAccent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>100% Sadar &amp; Terkendali</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-goldAccent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                            <span>Kerahasiaan Klien Terjamin</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-goldAccent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                            <span>Tatap Muka (Tabalong) &amp; Online</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Visual / Kartu Ilustrasi Menenangkan -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl bg-gradient-to-br from-tealDeep to-emeraldDark p-8 text-white shadow-2xl overflow-hidden">
+                        <!-- Aksen Lingkaran Halus -->
+                        <div class="absolute -top-12 -right-12 w-44 h-44 rounded-full bg-white/10"></div>
+                        <div class="absolute -bottom-16 -left-16 w-52 h-52 rounded-full bg-goldAccent/20"></div>
+
+                        <div class="relative z-10 space-y-6">
+                            <div class="w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                                <svg class="w-8 h-8 text-goldLight" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+
+                            <blockquote class="font-serif text-xl sm:text-2xl italic leading-relaxed text-creamWarm">
+                                "Pikiran yang tenang adalah awal dari keputusan yang bijak dan hidup yang lebih bermakna."
+                            </blockquote>
+
+                            <div class="pt-4 border-t border-white/15 flex items-center justify-between">
+                                <div>
+                                    <p class="font-semibold text-white">Auliadi, S.Pd., CHt., C.NLP.</p>
+                                    <p class="text-xs text-sageLight/90">Certified Hypnotherapist &amp; NLP Practitioner</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full bg-goldAccent/20 border border-goldLight/40 text-goldLight text-xs font-medium">
+                                    Sesi Privat
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. TENTANG HIPNOTERAPI & MITOS VS FAKTA -->
+    <section id="tentang" class="py-16 lg:py-24 bg-white border-y border-sageMuted/15">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-14">
+                <span class="text-xs font-bold tracking-widest uppercase text-goldAccent">Edukasi &amp; Pemahaman</span>
+                <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-tealDeep">
+                    Apa Itu Hipnoterapi Modern?
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                    Hipnoterapi adalah metode komunikasi terapeutik yang membimbing Anda memasuki kondisi <strong>relaksasi pikiran yang sangat fokus</strong> (gelombang otak Alpha-Theta). Dalam kondisi alami ini, pikiran bawah sadar menjadi lebih reseptif untuk menata ulang pola pikir, kebiasaan, dan respons emosional yang menghambat kemajuan diri Anda.
+                </p>
+            </div>
+
+            <!-- Grid Mitos vs Fakta -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Kartu Mitos -->
+                <div class="rounded-3xl bg-sandSoft/70 p-6 sm:p-8 border border-slate-200/80 space-y-5">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center font-bold">
+                            ✕
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-slate-800">Mitos yang Sering Beredar</h3>
+                    </div>
+                    <ul class="space-y-4 text-sm sm:text-base text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <span class="text-rose-500 font-bold mt-0.5">•</span>
+                            <span><strong>Tidak sadarkan diri / tertidur pulas:</strong> Banyak yang mengira klien dibuat pingsan atau lupa ingatan selama proses berlangsung.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-rose-500 font-bold mt-0.5">•</span>
+                            <span><strong>Kehilangan kendali &amp; membongkar rahasia:</strong> Anggapan bahwa terapis bisa memaksa klien melakukan hal di luar kehendaknya.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-rose-500 font-bold mt-0.5">•</span>
+                            <span><strong>Berkaitan dengan mistis atau klenik:</strong> Sering disalahartikan sebagai praktik supranatural karena tayangan hiburan di televisi.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kartu Fakta -->
+                <div class="rounded-3xl bg-sageLight/60 p-6 sm:p-8 border border-sageMuted/30 space-y-5">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-tealDeep text-white flex items-center justify-center font-bold">
+                            ✓
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-tealDeep">Fakta Ilmiah Hipnoterapi</h3>
+                    </div>
+                    <ul class="space-y-4 text-sm sm:text-base text-slate-700">
+                        <li class="flex items-start gap-3">
+                            <span class="text-tealDeep font-bold mt-0.5">•</span>
+                            <span><strong>Sadar sepenuhnya &amp; nyaman:</strong> Anda tetap mendengar suara terapis, menyadari lingkungan sekitar, dan merasakan ketenangan mendalam.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-tealDeep font-bold mt-0.5">•</span>
+                            <span><strong>Kendali penuh ada di tangan Anda:</strong> Pikiran bawah sadar memiliki filter alami; Anda hanya menerima sugesti yang selaras dengan nilai dan tujuan Anda.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-tealDeep font-bold mt-0.5">•</span>
+                            <span><strong>Berbasis psikologi &amp; neurosains:</strong> Diakui secara luas sebagai metode pemberdayaan diri yang terstruktur, logis, dan aman.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. LAYANAN UTAMA -->
+    <section id="layanan" class="py-16 lg:py-24 bg-creamWarm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-14">
+                <span class="text-xs font-bold tracking-widest uppercase text-goldAccent">Fokus Pendampingan</span>
+                <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-tealDeep">
+                    Layanan Utama Hipnoterapi &amp; NLP
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Setiap sesi dirancang secara personal menyesuaikan kebutuhan spesifik dan tujuan pemberdayaan diri Anda.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Card 1 -->
+                <div class="rounded-3xl bg-white p-7 border border-sageMuted/20 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-sageLight text-tealDeep flex items-center justify-center group-hover:bg-tealDeep group-hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-tealDeep">Manajemen Stres, Cemas &amp; Overthinking</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Membantu menenangkan sistem saraf yang tegang, menghentikan siklus pikiran berlebih (overthinking), meningkatkan kualitas tidur, dan menghadirkan ketenangan batin.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <button onclick="pilihLayanan('Manajemen Stres, Cemas & Overthinking')" class="text-sm font-semibold text-tealDeep hover:text-goldAccent flex items-center gap-1.5 transition-colors">
+                            <span>Pilih Layanan Ini</span>
+                            <span>→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="rounded-3xl bg-white p-7 border border-sageMuted/20 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-sageLight text-tealDeep flex items-center justify-center group-hover:bg-tealDeep group-hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-tealDeep">Kepercayaan Diri &amp; Public Speaking</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Mengatasi rasa gugup, demam panggung, takut salah bicara, serta menghancurkan <em>mental block</em> saat harus tampil presentasi, wawancara, maupun memimpin forum.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <button onclick="pilihLayanan('Kepercayaan Diri & Public Speaking')" class="text-sm font-semibold text-tealDeep hover:text-goldAccent flex items-center gap-1.5 transition-colors">
+                            <span>Pilih Layanan Ini</span>
+                            <span>→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="rounded-3xl bg-white p-7 border border-sageMuted/20 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-sageLight text-tealDeep flex items-center justify-center group-hover:bg-tealDeep group-hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-tealDeep">Modifikasi Kebiasaan &amp; Motivasi</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Menanamkan program positif untuk menghentikan kebiasaan menunda-nunda (prokrastinasi), kebiasaan buruk yang sulit lepas, serta meningkatkan fokus belajar dan produktivitas kerja.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <button onclick="pilihLayanan('Modifikasi Kebiasaan & Motivasi')" class="text-sm font-semibold text-tealDeep hover:text-goldAccent flex items-center gap-1.5 transition-colors">
+                            <span>Pilih Layanan Ini</span>
+                            <span>→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="rounded-3xl bg-white p-7 border border-sageMuted/20 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-sageLight text-tealDeep flex items-center justify-center group-hover:bg-tealDeep group-hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-tealDeep">Trauma Ringan &amp; Pelepasan Emosi Negatif</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Membantu Anda berdamai dengan kenangan pahit masa lalu, melepaskan rasa kecewa, marah, atau sedih yang terpendam agar dapat melangkah lebih ringan.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <button onclick="pilihLayanan('Trauma Ringan & Pelepasan Emosi Negatif')" class="text-sm font-semibold text-tealDeep hover:text-goldAccent flex items-center gap-1.5 transition-colors">
+                            <span>Pilih Layanan Ini</span>
+                            <span>→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="rounded-3xl bg-white p-7 border border-sageMuted/20 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group md:col-span-2 lg:col-span-2">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-goldLight text-goldAccent flex items-center justify-center group-hover:bg-goldAccent group-hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-tealDeep">Pengembangan Diri &amp; Peak Performance (NLP)</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed max-w-2xl">
+                            Menggunakan teknik <em>Neuro-Linguistic Programming (NLP)</em> untuk menyelaraskan nilai hidup, memperjelas visi masa depan, membangun ketangguhan mental (resiliensi), dan mengoptimalkan performa puncak dalam karier maupun pendidikan.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <button onclick="pilihLayanan('Pengembangan Diri & Peak Performance (NLP)')" class="text-sm font-semibold text-tealDeep hover:text-goldAccent flex items-center gap-1.5 transition-colors">
+                            <span>Pilih Layanan Ini</span>
+                            <span>→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ALUR SESI TERAPI (4 LANGKAH MUDAH) -->
+    <section id="alur" class="py-16 lg:py-24 bg-tealDeep text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <span class="text-xs font-bold tracking-widest uppercase text-goldLight">Proses Terstruktur</span>
+                <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold">
+                    4 Langkah Mudah Memulai Sesi Anda
+                </h2>
+                <p class="text-sageLight/90 text-base sm:text-lg">
+                    Kami memastikan setiap tahapan berjalan nyaman, transparan, dan menghormati privasi Anda sepenuhnya.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Langkah 1 -->
+                <div class="rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 p-6 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-goldAccent text-white font-serif font-bold text-xl flex items-center justify-center shadow-md">
+                        1
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white">Konsultasi Awal Gratis</h3>
+                    <p class="text-sm text-sageLight/90 leading-relaxed">
+                        Sesi perkenalan singkat (±15 menit) via chat WhatsApp atau telepon untuk menyampaikan keluhan awal dan menentukan kecocokan pendekatan.
+                    </p>
+                </div>
+
+                <!-- Langkah 2 -->
+                <div class="rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 p-6 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-goldAccent text-white font-serif font-bold text-xl flex items-center justify-center shadow-md">
+                        2
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white">Pre-Talk &amp; Pemetaan</h3>
+                    <p class="text-sm text-sageLight/90 leading-relaxed">
+                        Diskusi mendalam pada awal sesi untuk memetakan akar masalah, merumuskan tujuan (outcome) yang jelas, serta menjelaskan mekanisme terapi.
+                    </p>
+                </div>
+
+                <!-- Langkah 3 -->
+                <div class="rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 p-6 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-goldAccent text-white font-serif font-bold text-xl flex items-center justify-center shadow-md">
+                        3
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white">Sesi Induksi &amp; Terapi</h3>
+                    <p class="text-sm text-sageLight/90 leading-relaxed">
+                        Anda dibimbing menuju relaksasi nyaman untuk melepaskan beban emosi dan menanamkan pemberdayaan pikiran bawah sadar yang positif.
+                    </p>
+                </div>
+
+                <!-- Langkah 4 -->
+                <div class="rounded-3xl bg-white/10 backdrop-blur-sm border border-white/15 p-6 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-goldAccent text-white font-serif font-bold text-xl flex items-center justify-center shadow-md">
+                        4
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white">Evaluasi &amp; Post-Hypnotic</h3>
+                    <p class="text-sm text-sageLight/90 leading-relaxed">
+                        Penguatan hasil terapi (anchoring &amp; sugesti pasca-hipnosis) serta panduan praktis mandiri agar perubahan bertahan jangka panjang.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PROFIL PRAKTISI -->
+    <section id="profil" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="rounded-3xl bg-sandSoft border border-sageMuted/25 overflow-hidden shadow-sm">
+                <div class="grid grid-cols-1 lg:grid-cols-12">
+                    <!-- Kolom Kartu Identitas Visual -->
+                    <div class="lg:col-span-5 bg-gradient-to-br from-emeraldDark to-tealDeep p-8 sm:p-10 text-white flex flex-col justify-between">
+                        <div class="space-y-5">
+                            <!-- Avatar Monogram Elegan -->
+                            <div class="w-24 h-24 rounded-3xl bg-white/15 border-2 border-goldLight/60 flex items-center justify-center shadow-lg">
+                                <span class="font-serif text-3xl font-bold text-goldLight">A</span>
+                            </div>
+                            <div>
+                                <span class="inline-block px-3 py-1 rounded-full bg-white/10 text-goldLight text-xs font-semibold mb-2">
+                                    Praktisi Tersertifikasi
+                                </span>
+                                <h2 class="font-serif text-2xl sm:text-3xl font-bold leading-snug">
+                                    Auliadi, S.Pd., CHt., C.NLP.
+                                </h2>
+                                <p class="text-sageLight text-sm mt-1">
+                                    Hypnotherapist, NLP Practitioner &amp; Public Speaking Trainer
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-white/15 space-y-2 text-sm text-sageLight">
+                            <p class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-goldLight shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                                <span>Praktik Tatap Muka: Tabalong, Kalimantan Selatan</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-goldLight shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                                <span>Sesi Online: Video Call / Zoom (Seluruh Indonesia)</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Kredensial & Deskripsi -->
+                    <div class="lg:col-span-7 p-8 sm:p-10 space-y-6">
+                        <div class="space-y-3">
+                            <span class="text-xs font-bold tracking-widest uppercase text-goldAccent">Mengenal Praktisi Anda</span>
+                            <h3 class="font-serif text-2xl font-bold text-tealDeep">
+                                Pendampingan Empatik dengan Pendekatan Terukur
+                            </h3>
+                            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                                Dengan latar belakang pendidikan (S.Pd.) serta sertifikasi profesional di bidang Hipnoterapi, Neuro-Linguistic Programming (NLP), dan Public Speaking, Auliadi berkomitmen membantu individu mengenali hambatan mental mereka serta memberdayakan potensi terbaik dari dalam diri secara aman, beretika, dan penuh empati.
+                            </p>
+                        </div>
+
+                        <!-- Daftar Kredensial -->
+                        <div class="space-y-3">
+                            <h4 class="font-semibold text-sm uppercase tracking-wider text-tealDeep">Sertifikasi &amp; Kualifikasi:</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div class="p-3.5 rounded-2xl bg-white border border-sageMuted/20 flex items-start gap-3">
+                                    <span class="w-6 h-6 rounded-lg bg-sageLight text-tealDeep flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                    <div>
+                                        <p class="font-semibold text-sm text-slate-800">Certified Hypnotherapist (CHt.)</p>
+                                        <p class="text-xs text-slate-500">Indonesian Hypnosis Centre (IHC)</p>
+                                    </div>
+                                </div>
+                                <div class="p-3.5 rounded-2xl bg-white border border-sageMuted/20 flex items-start gap-3">
+                                    <span class="w-6 h-6 rounded-lg bg-sageLight text-tealDeep flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                    <div>
+                                        <p class="font-semibold text-sm text-slate-800">Certified NLP Practitioner (C.NLP.)</p>
+                                        <p class="text-xs text-slate-500">Transformasi Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="p-3.5 rounded-2xl bg-white border border-sageMuted/20 flex items-start gap-3">
+                                    <span class="w-6 h-6 rounded-lg bg-sageLight text-tealDeep flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                    <div>
+                                        <p class="font-semibold text-sm text-slate-800">Certified Public Speaking</p>
+                                        <p class="text-xs text-slate-500">Komunikasi &amp; Pemberdayaan Diri</p>
+                                    </div>
+                                </div>
+                                <div class="p-3.5 rounded-2xl bg-white border border-sageMuted/20 flex items-start gap-3">
+                                    <span class="w-6 h-6 rounded-lg bg-sageLight text-tealDeep flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                    <div>
+                                        <p class="font-semibold text-sm text-slate-800">Sarjana Pendidikan (S.Pd.)</p>
+                                        <p class="text-xs text-slate-500">Pendekatan Edukatif &amp; Humanis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Disclaimer Etis -->
+                        <div class="p-4 rounded-2xl bg-goldLight/40 border border-goldAccent/30 text-xs text-slate-700 leading-relaxed">
+                            <strong>Catatan Etika Profesi:</strong> Layanan hipnoterapi dan NLP ini berfokus pada pemberdayaan diri, pengembangan mental, relaksasi, dan modifikasi perilaku (non-klinis). Layanan ini bukan pengganti diagnosis maupun perawatan medis/psikiatris.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. KUIS INTERAKTIF SELF-CHECK KONDISI PIKIRAN -->
+    <section id="self-check" class="py-16 lg:py-24 bg-sageLight/50 border-y border-sageMuted/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-10">
+                <span class="text-xs font-bold tracking-widest uppercase text-goldAccent">Refleksi Singkat</span>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-tealDeep">
+                    Cek Kondisi Pikiran &amp; Kesiapan Terapi Anda
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto">
+                    Jawab 5 pertanyaan singkat berikut untuk mengetahui gambaran tingkat beban pikiran Anda saat ini dan mendapatkan rekomendasi sesi yang sesuai.
+                </p>
+            </div>
+
+            <div class="rounded-3xl bg-white p-6 sm:p-10 shadow-md border border-sageMuted/20">
+                <form id="quiz-form" class="space-y-6">
+                    <!-- Pertanyaan 1 -->
+                    <div class="space-y-2.5 pb-5 border-b border-slate-100">
+                        <p class="font-semibold text-slate-800 text-sm sm:text-base">1. Dalam 2 minggu terakhir, seberapa sering pikiran Anda terasa penuh atau sulit berhenti memikirkan banyak hal (overthinking)?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="1" class="peer sr-only" required>
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Jarang / Terkendali</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="2" class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Cukup Sering</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="3" class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Hampir Setiap Hari</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan 2 -->
+                    <div class="space-y-2.5 pb-5 border-b border-slate-100">
+                        <p class="font-semibold text-slate-800 text-sm sm:text-base">2. Bagaimana kualitas istirahat dan ketenangan emosi Anda belakangan ini?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q2" value="1" class="peer sr-only" required>
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Nyenyak &amp; Tenang</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q2" value="2" class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Mudah Lelah / Gelisah</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q2" value="3" class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Sulit Tidur &amp; Tegang</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan 3 -->
+                    <div class="space-y-2.5 pb-5 border-b border-slate-100">
+                        <p class="font-semibold text-slate-800 text-sm sm:text-base">3. Apakah Anda merasakan hambatan kepercayaan diri, demam panggung, atau kebiasaan menunda pekerjaan?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q3" value="1" class="peer sr-only" required>
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Tidak Mengganggu</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q3" value="2" class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Kadang Menghambat</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q3" value="3" class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Sangat Menghambat</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan 4 -->
+                    <div class="space-y-2.5 pb-5 border-b border-slate-100">
+                        <p class="font-semibold text-slate-800 text-sm sm:text-base">4. Apakah ada emosi masa lalu (kecewa, sedih, atau trauma ringan) yang masih sering teringat dan memengaruhi suasana hati?</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q4" value="1" class="peer sr-only" required>
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Sudah Berdamai</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q4" value="2" class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Sesekali Muncul</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q4" value="3" class="peer sr-only">
+                                <div class="p-3 rounded-xl border border-slate-200 text-xs sm:text-sm text-center peer-checked:bg-tealDeep peer-checked:text-white peer-checked:border-tealDeep transition-all">Cukup Membebani</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan 5 (Fokus Utama) -->
+                    <div class="space-y-2.5">
+                        <p class="font-semibold text-slate-800 text-sm sm:text-base">5. Apa fokus perubahan utama yang paling ingin Anda capai saat ini?</p>
+                        <select id="quiz-focus" class="w-full p-3.5 rounded-xl border border-slate-300 bg-creamWarm text-sm text-slate-800 focus:outline-none focus:border-tealDeep">
+                            <option value="Manajemen Stres, Cemas & Overthinking">Ketenangan batin &amp; mengurangi overthinking</option>
+                            <option value="Kepercayaan Diri & Public Speaking">Meningkatkan percaya diri &amp; public speaking</option>
+                            <option value="Modifikasi Kebiasaan & Motivasi">Mengubah kebiasaan buruk &amp; meningkatkan motivasi</option>
+                            <option value="Trauma Ringan & Pelepasan Emosi Negatif">Melepaskan beban emosi masa lalu</option>
+                            <option value="Pengembangan Diri & Peak Performance (NLP)">Meningkatkan fokus &amp; performa puncak diri</option>
+                        </select>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full py-4 rounded-2xl bg-tealDeep hover:bg-emeraldDark text-white font-semibold shadow-md transition-all">
+                            Lihat Hasil &amp; Rekomendasi Sesi
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Kotak Hasil Kuis (Tersembunyi Awalnya) -->
+                <div id="quiz-result" class="hidden mt-8 p-6 rounded-2xl bg-sageLight/70 border border-tealDeep/20 space-y-4">
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                        <span id="result-badge" class="px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-tealDeep text-white"></span>
+                        <span id="result-score-text" class="text-xs font-semibold text-slate-600"></span>
+                    </div>
+                    <h3 id="result-title" class="font-serif text-xl font-bold text-tealDeep"></h3>
+                    <p id="result-desc" class="text-sm text-slate-700 leading-relaxed"></p>
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <a id="result-wa-link" href="#" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-tealDeep hover:bg-emeraldDark text-white text-sm font-semibold text-center shadow transition-all">
+                            Kirim Hasil Ini ke WhatsApp Praktisi
+                        </a>
+                        <button type="button" onclick="resetQuiz()" class="px-5 py-3 rounded-xl bg-white text-slate-600 border border-slate-200 text-sm font-medium hover:bg-slate-50 transition-all">
+                            Ulangi Cek
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FAQ (ACCORDION INTERAKTIF) -->
+    <section id="faq" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-12">
+                <span class="text-xs font-bold tracking-widest uppercase text-goldAccent">Tanya Jawab</span>
+                <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-tealDeep">
+                    Pertanyaan yang Sering Diajukan
+                </h2>
+            </div>
+
+            <div class="space-y-4" id="faq-container">
+                <!-- FAQ 1 -->
+                <div class="rounded-2xl border border-sageMuted/25 bg-creamWarm overflow-hidden">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center gap-4 font-semibold text-tealDeep hover:bg-sandSoft/60 transition-colors">
+                        <span>Apakah saya akan tidak sadarkan diri atau kehilangan kendali saat sesi?</span>
+                        <span class="faq-icon text-xl font-bold text-goldAccent transition-transform duration-200">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-sageMuted/15 pt-3">
+                        Tidak sama sekali. Dalam hipnoterapi modern, Anda berada dalam kondisi relaksasi mendalam namun tetap sadar sepenuhnya. Anda mendengar setiap kata terapis, menyadari posisi tubuh Anda, dan memegang kendali penuh untuk menerima atau menolak sugesti apa pun.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="rounded-2xl border border-sageMuted/25 bg-creamWarm overflow-hidden">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center gap-4 font-semibold text-tealDeep hover:bg-sandSoft/60 transition-colors">
+                        <span>Berapa kali sesi terapi yang biasanya dibutuhkan?</span>
+                        <span class="faq-icon text-xl font-bold text-goldAccent transition-transform duration-200">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-sageMuted/15 pt-3">
+                        Hipnoterapi dan NLP dikenal sebagai pendekatan <em>brief therapy</em> (terapi singkat). Banyak klien merasakan perubahan signifikan hanya dalam 1 hingga 3 sesi, tergantung pada kompleksitas masalah, keterbukaan pikiran, dan komitmen klien dalam mengikuti proses.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="rounded-2xl border border-sageMuted/25 bg-creamWarm overflow-hidden">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center gap-4 font-semibold text-tealDeep hover:bg-sandSoft/60 transition-colors">
+                        <span>Apakah sesi hipnoterapi secara online (Video Call / Zoom) sama efektifnya dengan tatap muka?</span>
+                        <span class="faq-icon text-xl font-bold text-goldAccent transition-transform duration-200">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-sageMuted/15 pt-3">
+                        Ya, sangat efektif. Karena hipnoterapi bekerja melalui panduan suara dan fokus pikiran Anda sendiri, sesi online memiliki efektivitas yang setara dengan tatap muka selama Anda berada di ruangan yang tenang, nyaman, bebas gangguan, serta memiliki koneksi internet stabil dan menggunakan earphone/headset.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="rounded-2xl border border-sageMuted/25 bg-creamWarm overflow-hidden">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center gap-4 font-semibold text-tealDeep hover:bg-sandSoft/60 transition-colors">
+                        <span>Berapa lama durasi satu kali pertemuan terapi?</span>
+                        <span class="faq-icon text-xl font-bold text-goldAccent transition-transform duration-200">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-sageMuted/15 pt-3">
+                        Satu sesi penuh biasanya berlangsung sekitar 60 hingga 90 menit. Durasi ini mencakup tahap <em>pre-talk</em> (pemetaan masalah), proses relaksasi dan terapi inti, hingga evaluasi akhir.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="rounded-2xl border border-sageMuted/25 bg-creamWarm overflow-hidden">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center gap-4 font-semibold text-tealDeep hover:bg-sandSoft/60 transition-colors">
+                        <span>Apakah privasi dan cerita saya dijamin kerahasiaannya?</span>
+                        <span class="faq-icon text-xl font-bold text-goldAccent transition-transform duration-200">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-sageMuted/15 pt-3">
+                        100% terjamin. Sesuai kode etik profesi praktisi hipnoterapi, seluruh identitas, catatan sesi, dan permasalahan yang Anda sampaikan dijaga kerahasiaannya secara ketat dan tidak akan dibagikan kepada pihak mana pun.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FORMULIR RESERVASI SESI -->
+    <section id="reservasi" class="py-16 lg:py-24 bg-sandSoft border-t border-sageMuted/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="rounded-3xl bg-white p-6 sm:p-10 lg:p-12 shadow-xl border border-sageMuted/20">
+                <div class="text-center space-y-3 mb-8">
+                    <span class="text-xs font-bold tracking-widest uppercase text-goldAccent">Langkah Awal Perubahan</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-tealDeep">
+                        Formulir Reservasi &amp; Konsultasi Sesi
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base max-w-xl mx-auto">
+                        Isi data singkat di bawah ini. Anda akan langsung terhubung ke WhatsApp resmi <strong>Auliadi, S.Pd., CHt., C.NLP.</strong> untuk konfirmasi jadwal.
+                    </p>
+                </div>
+
+                <form id="booking-form" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <!-- Nama Lengkap -->
+                        <div>
+                            <label for="nama" class="block text-sm font-semibold text-slate-700 mb-1.5">Nama Lengkap / Panggilan *</label>
+                            <input type="text" id="nama" required placeholder="Contoh: Budi Santoso" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-creamWarm text-sm focus:outline-none focus:border-tealDeep transition-colors">
+                        </div>
+
+                        <!-- Pilihan Metode -->
+                        <div>
+                            <label for="metode" class="block text-sm font-semibold text-slate-700 mb-1.5">Pilihan Metode Sesi *</label>
+                            <select id="metode" required class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-creamWarm text-sm focus:outline-none focus:border-tealDeep transition-colors">
+                                <option value="Sesi Tatap Muka (Tabalong, Kalimantan Selatan)">Tatap Muka (Belimbing Raya, Tabalong)</option>
+                                <option value="Sesi Online (Video Call / Zoom)">Online via Video Call / Zoom (Seluruh Indonesia)</option>
+                                <option value="Konsultasi Awal Gratis (15 Menit)">Konsultasi Awal Gratis (15 Menit via Chat/Telp)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <!-- Pilihan Layanan -->
+                        <div>
+                            <label for="layanan-select" class="block text-sm font-semibold text-slate-700 mb-1.5">Layanan yang Dibutuhkan *</label>
+                            <select id="layanan-select" required class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-creamWarm text-sm focus:outline-none focus:border-tealDeep transition-colors">
+                                <option value="Manajemen Stres, Cemas & Overthinking">Manajemen Stres, Cemas &amp; Overthinking</option>
+                                <option value="Kepercayaan Diri & Public Speaking">Kepercayaan Diri &amp; Public Speaking</option>
+                                <option value="Modifikasi Kebiasaan & Motivasi">Modifikasi Kebiasaan &amp; Motivasi</option>
+                                <option value="Trauma Ringan & Pelepasan Emosi Negatif">Trauma Ringan &amp; Pelepasan Emosi Negatif</option>
+                                <option value="Pengembangan Diri & Peak Performance (NLP)">Pengembangan Diri &amp; Peak Performance (NLP)</option>
+                                <option value="Lainnya / Belum Yakin (Ingin Konsultasi)">Lainnya / Belum Yakin (Ingin Konsultasi)</option>
+                            </select>
+                        </div>
+
+                        <!-- Jadwal yang Diinginkan -->
+                        <div>
+                            <label for="jadwal" class="block text-sm font-semibold text-slate-700 mb-1.5">Preferensi Hari &amp; Waktu *</label>
+                            <input type="text" id="jadwal" required placeholder="Contoh: Sabtu pagi / Hari kerja malam" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-creamWarm text-sm focus:outline-none focus:border-tealDeep transition-colors">
+                        </div>
+                    </div>
+
+                    <!-- Catatan Singkat -->
+                    <div>
+                        <label for="catatan" class="block text-sm font-semibold text-slate-700 mb-1.5">Keluhan atau Tujuan Singkat (Opsional)</label>
+                        <textarea id="catatan" rows="3" placeholder="Ceritakan secara singkat hal yang ingin Anda atasi atau capai..." class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-creamWarm text-sm focus:outline-none focus:border-tealDeep transition-colors"></textarea>
+                    </div>
+
+                    <!-- Kotak Pesan Notifikasi (Pengganti alert) -->
+                    <div id="form-notice" class="hidden p-3.5 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-sm"></div>
+
+                    <button type="submit" class="w-full py-4 px-6 rounded-2xl bg-tealDeep hover:bg-emeraldDark text-white font-semibold shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2.5 text-base">
+                        <svg class="w-5 h-5 text-goldLight" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+                        </svg>
+                        <span>Kirim Reservasi via WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="bg-emeraldDark text-sageLight pt-14 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-white/15">
+                <!-- Kolom 1: Identitas -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-goldLight">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                            </svg>
+                        </div>
+                        <span class="font-serif font-bold text-xl text-white">Auliadi MindCare</span>
+                    </div>
+                    <p class="text-sm text-sageLight/85 leading-relaxed">
+                        Layanan hipnoterapi modern dan NLP untuk ketenangan batin, pelepasan hambatan mental, dan pemberdayaan potensi diri secara profesional.
+                    </p>
+                </div>
+
+                <!-- Kolom 2: Lokasi & Jam Operasional -->
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-white text-lg">Lokasi &amp; Jadwal Praktik</h4>
+                    <p class="text-sm text-sageLight/90 leading-relaxed">
+                        <strong>Alamat Praktik:</strong><br>
+                        Belimbing Raya, Kec. Murung Pudak, Kabupaten Tabalong, Kalimantan Selatan
+                    </p>
+                    <p class="text-sm text-sageLight/90">
+                        <strong>Jam Operasional:</strong><br>
+                        Senin – Sabtu: 09.00 – 21.00 WITA (Dengan Perjanjian)
+                    </p>
+                </div>
+
+                <!-- Kolom 3: Kontak Langsung -->
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-white text-lg">Hubungi Kami</h4>
+                    <p class="text-sm text-sageLight/90">
+                        Konsultasi dan penjadwalan sesi privat:
+                    </p>
+                    <a href="https://wa.me/6285753987438?text=Halo%20Pak%20Auliadi,%20saya%20ingin%20bertanya%20mengenai%20layanan%20hipnoterapi." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-goldLight font-semibold text-sm transition-colors">
+                        <span>WhatsApp: 0857-5398-7438</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-sageLight/70">
+                <p>&copy; 2026 Auliadi, S.Pd., CHt., C.NLP. Hak Cipta Dilindungi.</p>
+                <p>Layanan Pemberdayaan Diri Non-Klinis • Tabalong &amp; Online Indonesia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6285753987438?text=Halo%20Pak%20Auliadi,%20saya%20tertarik%20untuk%20konsultasi%20gratis%20layanan%20hipnoterapi." target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp" class="fixed bottom-5 right-5 z-40 p-3.5 sm:px-5 sm:py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white shadow-xl hover:shadow-2xl transition-all flex items-center gap-2 group">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+        </svg>
+        <span class="hidden sm:inline text-sm font-semibold">Chat WhatsApp</span>
+    </a>
+
+    <!-- Vanilla JavaScript untuk Interaktivitas -->
+    <script>
+        // 1. Toggle Menu Mobile Hamburger
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+
+        // 2. Fungsi Pilih Layanan Otomatis ke Form Reservasi
+        function pilihLayanan(namaLayanan) {
+            const selectEl = document.getElementById('layanan-select');
+            const reservasiSection = document.getElementById('reservasi');
+            if (selectEl) {
+                selectEl.value = namaLayanan;
+            }
+            if (reservasiSection) {
+                reservasiSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // 3. Accordion FAQ Interaktif
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.faq-icon');
+                const isOpen = !content.classList.contains('hidden');
+
+                // Tutup semua item FAQ lain agar rapi
+                document.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
+                document.querySelectorAll('.faq-icon').forEach(ic => {
+                    ic.textContent = '+';
+                    ic.classList.remove('rotate-45');
+                });
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.textContent = '−';
+                }
+            });
+        });
+
+        // 4. Kuis Interaktif Self-Check Kondisi Pikiran
+        const quizForm = document.getElementById('quiz-form');
+        const quizResult = document.getElementById('quiz-result');
+        const resultBadge = document.getElementById('result-badge');
+        const resultScoreText = document.getElementById('result-score-text');
+        const resultTitle = document.getElementById('result-title');
+        const resultDesc = document.getElementById('result-desc');
+        const resultWaLink = document.getElementById('result-wa-link');
+
+        quizForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            try {
+                const q1 = parseInt(document.querySelector('input[name="q1"]:checked').value);
+                const q2 = parseInt(document.querySelector('input[name="q2"]:checked').value);
+                const q3 = parseInt(document.querySelector('input[name="q3"]:checked').value);
+                const q4 = parseInt(document.querySelector('input[name="q4"]:checked').value);
+                const focus = document.getElementById('quiz-focus').value;
+
+                const totalScore = q1 + q2 + q3 + q4; // Skor min 4, max 12
+                let kategori = '';
+                let judul = '';
+                let deskripsi = '';
+
+                if (totalScore <= 6) {
+                    kategori = 'Kondisi Pikiran Stabil';
+                    judul = 'Pikiran Anda Cukup Terkendali & Siap untuk Optimasi Diri';
+                    deskripsi = `Secara umum Anda mampu mengelola tekanan sehari-hari dengan baik. Sesi NLP & Pengembangan Diri sangat cocok untuk membantu Anda meningkatkan performa puncak pada fokus: "${focus}".`;
+                } else if (totalScore <= 9) {
+                    kategori = 'Beban Pikiran Moderat';
+                    judul = 'Ada Sinyal Kelelahan Mental yang Perlu Dikelola';
+                    deskripsi = `Pikiran Anda mulai menyimpan ketegangan yang dapat menghambat produktivitas dan ketenangan batin. Sesi relaksasi Hipnoterapi sangat direkomendasikan untuk menyegarkan kembali pikiran bawah sadar Anda terkait "${focus}".`;
+                } else {
+                    kategori = 'Beban Pikiran Tinggi';
+                    judul = 'Saatnya Memberi Ruang Istirahat & Pelepasan Mendalam';
+                    deskripsi = `Anda sedang memikul beban pikiran dan emosi yang cukup berat. Jangan memendamnya sendirian—sesi pendampingan privat Hipnoterapi dapat membantu melepaskan ketegangan secara aman dan bertahap pada area "${focus}".`;
+                }
+
+                resultBadge.textContent = kategori;
+                resultScoreText.textContent = `Indeks Refleksi: ${totalScore}/12`;
+                resultTitle.textContent = judul;
+                resultDesc.textContent = deskripsi;
+
+                const pesanWa = `Halo Pak Auliadi, saya baru saja mengisi Self-Check di website.\n\n*Hasil Refleksi:* ${kategori} (Skor ${totalScore}/12)\n*Fokus Utama:* ${focus}\n\nSaya ingin berdiskusi lebih lanjut mengenai sesi yang sesuai.`;
+                resultWaLink.href = `https://wa.me/6285753987438?text=${encodeURIComponent(pesanWa)}`;
+
+                quizResult.classList.remove('hidden');
+                quizResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } catch (err) {
+                console.error('Error memproses kuis:', err);
+            }
+        });
+
+        function resetQuiz() {
+            quizForm.reset();
+            quizResult.classList.add('hidden');
+        }
+
+        // 5. Formulir Reservasi ke WhatsApp
+        const bookingForm = document.getElementById('booking-form');
+        const formNotice = document.getElementById('form-notice');
+
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            formNotice.classList.add('hidden');
+
+            const nama = document.getElementById('nama').value.trim();
+            const metode = document.getElementById('metode').value;
+            const layanan = document.getElementById('layanan-select').value;
+            const jadwal = document.getElementById('jadwal').value.trim();
+            const catatan = document.getElementById('catatan').value.trim();
+
+            if (!nama || !jadwal) {
+                formNotice.textContent = 'Mohon lengkapi Nama dan Preferensi Jadwal terlebih dahulu.';
+                formNotice.classList.remove('hidden');
+                return;
+            }
+
+            let pesan = `Halo Pak Auliadi, S.Pd., CHt., C.NLP., saya ingin melakukan reservasi/konsultasi sesi hipnoterapi:\n\n`;
+            pesan += `• *Nama:* ${nama}\n`;
+            pesan += `• *Layanan:* ${layanan}\n`;
+            pesan += `• *Metode:* ${metode}\n`;
+            pesan += `• *Preferensi Jadwal:* ${jadwal}\n`;
+            if (catatan) {
+                pesan += `• *Catatan:* ${catatan}\n`;
+            }
+            pesan += `\nMohon informasi ketersediaan jadwalnya. Terima kasih.`;
+
+            const waUrl = `https://wa.me/6285753987438?text=${encodeURIComponent(pesan)}`;
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+        });
+    </script>
+</body>
+</html>
